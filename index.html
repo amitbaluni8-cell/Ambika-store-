@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambika Store | Grocery & Daily Essentials</title>
+  <meta name="description" content="Ambika Store - your neighbourhood grocery store for dairy, groceries, snacks, beverages and daily essentials.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🌿 <span>Ambika Store</span></div>
+  <a class="cart" href="#products">Shop Now</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">YOUR NEIGHBOURHOOD STORE</p>
+      <h1>Good food.<br><em>Good everyday.</em></h1>
+      <p class="hero-text">Fresh groceries and daily essentials from Ambika Store.</p>
+      <a class="btn" href="#products">Browse Products</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">SHOP BY CATEGORY</p>
+    <h2>Everything you need</h2>
+    <div class="categories">
+      <button onclick="filterProducts('all')">🛒 All</button>
+      <button onclick="filterProducts('dairy')">🥛 Dairy</button>
+      <button onclick="filterProducts('grocery')">🍚 Grocery</button>
+      <button onclick="filterProducts('snacks')">🍪 Snacks</button>
+      <button onclick="filterProducts('beverages')">🥤 Beverages</button>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <p class="eyebrow">POPULAR PRODUCTS</p>
+    <h2>Daily essentials</h2>
+    <div id="productGrid" class="grid"></div>
+  </section>
+
+  <section class="order-box">
+    <div>
+      <p class="eyebrow">QUICK ORDER</p>
+      <h2>Order directly on WhatsApp</h2>
+      <p>Send your shopping list to Ambika Store and we'll confirm availability and delivery.</p>
+    </div>
+    <a class="btn" id="whatsapp" href="#">WhatsApp Order</a>
+  </section>
+
+  <section class="section contact">
+    <p class="eyebrow">VISIT / CONTACT</p>
+    <h2>Ambika Store</h2>
+    <p>📍 Your shop address here</p>
+    <p>📞 Your phone number here</p>
+    <p>🕒 Opening hours: Add your timings</p>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Ambika Store. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
